@@ -1,4 +1,4 @@
 # bellerage-internship
 
 
-(белая полоса справа)[https://qna.habr.com/q/218863]
+[белая полоса справа](https://qna.habr.com/q/218863)
