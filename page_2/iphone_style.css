@@ -11,6 +11,7 @@ html {
 body {
   margin: 0 auto;
   overflow-x: hidden;
+  font-family: Arial;
 }
 
 header {
@@ -27,14 +28,13 @@ header {
   height: 190px;
   background-color: black;
   color: white;
-  font-size: 2rem;
+  font-size: 30px;
 }
 
 .customer-care {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 30px;
   background-color: #fafafa;
   width: 100%;
   height: 95px;
@@ -47,11 +47,11 @@ header {
   justify-content: right;
   height: 95px;
   width: 100%;
-  font-size: 30px;
 }
 
 .customer-blackline div {
   height: 100%;
+  border-left: 1px solid grey;
 }
 
 .customer-currency {
@@ -73,8 +73,13 @@ header {
   min-width: 300px;
   align-items: center;
   justify-content: center;
-  border-left: #838383 solid 2px;
-  border-right: #838383 solid 2px;
+  border-left: #838383 solid 1px;
+  border-right: #838383 solid 1px;
+}
+
+.customer-account p {
+  display: inline;
+  margin-left: 8px;
 }
 
 .customer-account i,
@@ -136,7 +141,7 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: #fafafa;
-  padding: 2%;
+  padding: 0px 30px 0 18px;
 
   width: 100%;
   height: 100px;
@@ -164,7 +169,8 @@ header {
 
 .cart-info {
   min-width: 275px;
-  font-size: 2rem;
+  font-size: 30px;
+  text-align: right;
 }
 
 .cart-info a {
@@ -183,12 +189,13 @@ header {
 }
 
 .menu button {
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: white;
   padding: 5%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border: none;
 }
 
 .menu-btn {
@@ -197,9 +204,14 @@ header {
   background-color: #fd926d;
 }
 
+.menu-btn p {
+  font-size: 30px;
+}
+
 .menu-btn a {
   text-decoration: none;
   color: white;
+  font-family: Arial;
 }
 
 /* MAIN  */
@@ -223,18 +235,45 @@ header {
   padding: 25px;
 }
 
+/* MAIL  */
+.mail-container {
+  display: flex;
+  width: 100%;
+  padding-right: 15px;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.plus-btn {
+  background-color: #fd926d;
+  box-shadow: 0px 8px 0px 0px #dd6b44;
+  border: none;
+
+  width: 96px;
+  height: 90px;
+
+  font-size: 5rem;
+  font-weight: bold;
+  color: white;
+}
+
 .contact-us input {
   width: 100%;
   padding: 0 2rem;
+  padding-top: 10px;
   font-size: 1.5rem;
+  font-style: italic;
   height: 90px;
-  background-color: white;
-  border: 1px solid black;
   margin-left: 15px;
+  background-color: #ededed;
+  border: none;
+
+  box-shadow: 0px 8px 0px 0px #ededed;
 }
 
 .contact-us a {
-  width: 98%;
+  /* width: 98%; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -247,7 +286,11 @@ header {
   width: 30%;
   min-width: 170px;
   padding: 25px 0;
-  /* margin-left: 30%; */
+  color: #6b6b6b;
+}
+
+.p-find-us {
+  font-size: 26px;
 }
 
 .contacts {
@@ -280,6 +323,11 @@ header {
   background-color: #ededed;
 }
 
+.social-network i {
+  font-size: 2rem;
+  color: #6b6b6b;
+}
+
 .shop-now-btn {
   display: none;
 }
@@ -300,7 +348,8 @@ header {
   background-color: #f4845d;
   color: white;
   padding: 0 5%;
-  font-size: 2rem;
+  font-size: 30px;
+  text-transform: uppercase;
 }
 
 /* PRODUCTS */
@@ -337,23 +386,55 @@ header {
 
 .product-image {
   width: 100%;
-  height: 70%;
+  height: 73%;
   background-repeat: no-repeat;
   background-position: 10% top;
   background-size: cover;
 }
 
 .dollar {
-  height: 100%;
-  width: 100%;
+  display: none;
 }
 
-.dollar:hover,
-.dollar:active {
-  background-image: url("images/dollar.svg");
+.circle {
+  height: 150px;
+  width: 150px;
+  background-color: #3d3d3d;
+  border-radius: 50%;
+  display: inline-block;
+
+  background-image: url('images/shop.svg');
+  background-size: 30%;
+  color: white;
+  background-position: center;
   background-repeat: no-repeat;
-  background-position: contain;
-  background-size: 20%;
+
+;
+}
+
+.circle i {
+  color: white;
+}
+
+.p-shop-it {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 105px;
+}
+
+.product-image:hover .dollar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+
+  color: white;
+
+  /* background-image: url("images/dollar.svg"); */
+  /* background-repeat: no-repeat; */
+  /* background-position: contain; */
 
   cursor: pointer;
 }
@@ -370,7 +451,7 @@ header {
 }
 
 .wishDress {
-  background-image: url("images/items/dress2.png");
+  background-image: url("images/items/bloose.png");
 }
 
 .product-info {
@@ -386,19 +467,29 @@ header {
   box-shadow: 0px 7px 0px 0px rgba(221, 107, 68, 0.004);
   width: 220px;
   height: 60px;
+
+  border: none;
+}
+
+.plus {
+  font-weight: bolder;
+  font-size: 32px;
+  vertical-align: middle;
+  margin-left: 3rem;
 }
 
 .add-to-cart-btn:hover {
   cursor: pointer;
-  border: none;
+  border: black 1px solid;
 }
 
 .product__title {
-  font-size: 1rem;
+  font-size: 18px;
 }
 
 .product__price {
-  font-size: 2rem;
+  font-size: 27.5px;
+  margin: 5px 0;
 }
 
 .more-btn {
@@ -414,24 +505,37 @@ header {
   color: white;
   background: black;
   margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.load-more:hover,
+.load-more:active {
+  cursor: pointer;
+  border: solid 1px white;
 }
 
 /* SALES  */
+.sale-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 25px 0;
+}
 
 .sale-icon {
-  width: 100%;
-  height: 20vh;
+  width: 95%;
+  height: 25vh;
   background-image: url("images/icons/sales.png");
   background-repeat: no-repeat;
   background-position: center;
 }
 
-/* .sales-line {
-    background-color: rgb(178, 178, 178);
-    opacity: 0.502;
-    width: 390px;
-    height: 1px;
-} */
+.sales-line {
+  background-color: rgb(178, 178, 178);
+  opacity: 0.502;
+  width: 390px;
+  height: 1px;
+}
 
 .sales-items {
   width: 100%;
@@ -482,7 +586,7 @@ footer {
   justify-content: space-between;
   align-items: center;
 
-  font-size: 1.5rem;
+  font-size: 24px;
   padding: 0 20px;
   height: 10vh;
   background-color: black;
