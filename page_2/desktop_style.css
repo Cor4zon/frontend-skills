@@ -1,0 +1,150 @@
+
+
+/* DESKTOP */
+@media (min-width: 1200px) {
+    .logo {
+        margin-left: 115px;
+    }
+
+    .customer-care {
+        margin-left: 115px;
+    }
+
+    header {
+        height: 130px;
+    }
+
+    .customer-blackline {
+        margin-right: 130px;
+    }
+
+    .contacts {
+        width: 70%;
+    }
+
+    .contact-us input {
+        margin-left: -25rem;
+    }
+
+    .shop-info {
+        height: 100px;        
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .big-cart {
+        margin-right: 115px;
+    }
+    
+    .cart {
+        display: flex;
+        font-size: 1rem;
+        height: 50%;
+        width: 100%;
+    }
+
+    .cart-info {
+        min-width: 0;
+    }
+    
+    .menu-list {
+        display: flex;
+        list-style-type: none;
+        margin-left: 300px;
+    }
+
+    .menu-list-item {
+        margin-left: 1rem;
+    }
+
+    .menu-list-item a {
+        color: black;
+    }
+
+
+    .menu {
+        display: none;
+    }
+
+    .background {
+        height: 435px;
+    }
+
+    .background button {
+        width: 160px;
+        height: 60px;
+    }
+
+    .special-offers {
+        height: 50vh;
+        padding: 3%;
+    }
+
+    .product-item {
+        display: inline-block;
+        width: 280px;
+        height: 500px;
+        background-color: white;
+        margin: 10px;
+    }
+
+    .hot-shorts {
+        background-image: url('images/items/shorts.png');
+    }
+
+    .tank-dress {
+        background-image: url('images/items/tank.png');
+    }
+
+    .dress-lace {
+        background-image: url('images/items/dress3.png');
+    }
+
+    .sales-products-item {
+        display: inline-block;
+        width: 280px;
+        height: 500px;
+        background-color: white;
+        margin: 10px;
+    }
+
+
+    .categories {
+        display: flex;
+        list-style-type: none;
+    }
+
+    .catetory-item {
+        margin-left: 5rem;
+        font-size: 2rem;
+        padding: 1rem;
+    }
+
+    .catetory-item:nth-child(5) {
+        position: absolute;
+        right: 5%
+    }
+
+    .catetory-item:nth-child(6) {
+        position: absolute;
+        right: 2%
+    }
+    
+    .catetory-item:nth-child(6) {
+        margin-left: 1rem;
+    }
+
+    .catetory-item:hover, 
+    .catetory-item:active {
+        background-color: #ffa687;
+        color: white;
+        cursor: pointer;
+    }
+
+    .black-bar-info {
+        margin-left: -40rem;
+    }
+}
+
