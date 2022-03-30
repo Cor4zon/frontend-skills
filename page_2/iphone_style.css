@@ -294,10 +294,10 @@ header {
 }
 
 .contacts {
-  width: 90%;
+  width: 100%;
   text-align: center;
   display: flex;
-  justify-content: right;
+  justify-content: center;
   align-items: center;
 
   margin: 25px 0;
@@ -350,6 +350,8 @@ header {
   padding: 0 5%;
   font-size: 30px;
   text-transform: uppercase;
+
+  border: none;
 }
 
 /* PRODUCTS */
@@ -367,7 +369,7 @@ header {
   display: flex;
   justify-content: center;
   list-style-type: none;
-  padding-top: 30px;
+  padding-top: 20px;
 }
 
 .product-item {
@@ -401,15 +403,19 @@ header {
   width: 150px;
   background-color: #3d3d3d;
   border-radius: 50%;
-  display: inline-block;
+  /* display: inline-block; */
 
-  background-image: url('images/shop.svg');
-  background-size: 30%;
+  /* background-image: url('images/shop.svg');
+  background-size: 30%; */
   color: white;
-  background-position: center;
-  background-repeat: no-repeat;
+  /* background-position: center;
+  background-repeat: no-repeat; */
 
-;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
 }
 
 .circle i {
@@ -420,7 +426,8 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 105px;
+    margin-top: 8px;
+    font-size: 18px;
 }
 
 .product-image:hover .dollar {
@@ -463,24 +470,24 @@ header {
 .add-to-cart-btn {
   background-color: #fd926d;
   color: white;
-  font-size: 1rem;
+  font-size: 20px;
   box-shadow: 0px 7px 0px 0px rgba(221, 107, 68, 0.004);
   width: 220px;
-  height: 60px;
-
+  height: 66px;
+  
   border: none;
+  border-bottom: 4px #dd6b44 solid;
+}
+
+.add-to-cart-btn:hover {
+  cursor: pointer;
 }
 
 .plus {
   font-weight: bolder;
   font-size: 32px;
   vertical-align: middle;
-  margin-left: 3rem;
-}
-
-.add-to-cart-btn:hover {
-  cursor: pointer;
-  border: black 1px solid;
+  margin-left: 1rem;
 }
 
 .product__title {

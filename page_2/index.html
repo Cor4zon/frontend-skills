@@ -54,53 +54,54 @@
                 <div class="logo"></div>
             </a>
 
-            <ul class="menu-list">
-                <li class="menu-list-item">
-                    <a href="#">
-                        new
-                        <i class="fa-solid fa-caret-down"></i>
-                    </a>
-                </li>
-                <li class="menu-list-item">
-                    <a href="#">
-                        designer
-                        <i class="fa-solid fa-caret-down"></i>
-                    </a>
-                </li>
-                <li class="menu-list-item">
-                    <a href="#">
-                        woman
-                        <i class="fa-solid fa-caret-down"></i>
-                    </a>
-                </li>
-                <li class="menu-list-item">
-                    <a href="#">
-                        men
-                        <i class="fa-solid fa-caret-down"></i>
-                    </a>
-                </li>
-                <li class="menu-list-item">
-                    <a href="#">
-                        cleaence
-                        <i class="fa-solid fa-caret-down"></i>
-                    </a>
-                </li>
-            </ul>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li class="menu-list-item">
+                        <a href="#">
+                            new
+                            <i class="fa-solid fa-caret-down"></i>
+                        </a>
+                    </li>
+                    <li class="menu-list-item">
+                        <a href="#">
+                            designer
+                            <i class="fa-solid fa-caret-down"></i>
+                        </a>
+                    </li>
+                    <li class="menu-list-item">
+                        <a href="#">
+                            woman
+                            <i class="fa-solid fa-caret-down"></i>
+                        </a>
+                    </li>
+                    <li class="menu-list-item">
+                        <a href="#">
+                            men
+                            <i class="fa-solid fa-caret-down"></i>
+                        </a>
+                    </li>
+                    <li class="menu-list-item">
+                        <a href="#">
+                            cleaence
+                            <i class="fa-solid fa-caret-down"></i>
+                        </a>
+                    </li>
+                </ul>
 
-            <div class="big-cart">
+                <div class="big-cart">
 
-                <div class="your-cart">
-                    <p class="p-placeholder">Your cart</p>
-                    <i class="fa-solid fa-caret-down"></i>
-                </div>
-
-                <div class="cart">
-                    <div class="cart-icon">
-                        <a href="#"></a>
+                    <div class="your-cart">
+                        <p class="p-placeholder">Your cart</p>
+                        <i class="fa-solid fa-caret-down"></i>
                     </div>
-                    <div class="cart-info">
-                        <!-- <p>0 ITEMS | $ 0</p> -->
-                        <a href="#">0 ITEMS | $ 0</a>
+
+                    <div class="cart">
+                        <div class="cart-icon">
+                            <a href="#"></a>
+                        </div>
+                        <div class="cart-info">
+                            <a href="#">0 ITEMS | $ 0</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -123,6 +124,10 @@
 
     <main>
         <div class="background">
+            <div class="left-scroll"><i class="fa-solid fa-chevron-left" style="color: #cbcbca; font-size: 2rem;"></i>
+            </div>
+            <div class="right-scroll"><i class="fa-solid fa-chevron-right" style="color: #cbcbca; font-size: 2rem;"></i>
+            </div>
             <div class="crazy_summer-box">
                 <div class="crazy-container">
                     <div class="short-rectangle"></div>
@@ -136,6 +141,13 @@
                 <div class="slim-rectangle"></div>
                 <p id="woman-collection">WOMAN COLLECTION</p>
                 <button>SHOP NOW <i class="fa-solid fa-caret-right" style="margin-left: 12px"></i></button>
+            </div>
+            <div class="dot-set">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
             </div>
         </div>
 
@@ -173,38 +185,49 @@
             </div>
         </div>
 
-        <section class="special-offers">
-            <div class="offer-1">
-                <a href="#">
-                    <div class="offer-1__text">
-                        <p class="p-best">BEST</p>
-                        <p class="p-outfits">OUTFITS</p>
-                        <div class="n-background">&</div>
-                        <p class="p-looks">LOOKS</p>
-                    </div>
-                </a>
-            </div>
-
-            <div class="offer-2">
-                <a href="#"></a>
-            </div>
-            <div class="offer-3">
-                <a href="#">
-                    <p class="p-best-sells">BEST SELLERS</p>
-                </a>
-            </div>
-            <div class="offer-4">
-                <div class="offer-4__text">
-                    <p class="p-fall">FALL</p>
-                    <p class="p-leaher">LEAHER</p>
-                    <button class="shop-now-btn">SHOP NOW</button>
+        <div class="offers-container">
+            <section class="special-offers">
+                <div class="offer-1">
+                    <a href="#">
+                        <div class="offer-1__text">
+                            <p class="p-best">BEST</p>
+                            <p class="p-outfits">OUTFITS</p>
+                            <div class="n-container">
+                                <div class="n-line"></div>
+                                <div class="n-background">&</div>
+                                <div class="n-line"></div>
+                            </div>
+                            <p class="p-looks">LOOKS</p>
+                        </div>
+                    </a>
                 </div>
-            </div>
-        </section>
+
+                <div class="offer-2">
+                    <a href="#">
+                        <div class="offer-2__image"></div>
+                    </a>
+                </div>
+                <div class="offer-3">
+                    <a href="#">
+                        <p class="p-best-sells">BEST SELLERS</p>
+                    </a>
+                </div>
+                <div class="offer-4">
+                    <div class="offer-4__text">
+                        <p class="p-fall">FALL</p>
+                        <p class="p-leaher">LEAHER</p>
+                        <button class="shop-now-btn">SHOP NOW</button>
+                    </div>
+                </div>
+            </section>
+        </div>
 
 
         <!-- FOR MOBILES -->
         <form class="category-form">
+            <i class="fa-solid fa-caret-down"
+                style="position: absolute;right: 25px;bottom: -70px;/* top: 18px; */color: white;font-size:2rem"></i>
+
             <select name="category" id="category-select">
                 <!-- <option value="">-- Выберите категорию --</option> -->
                 <option value="hot">What's hot?</option>
@@ -216,6 +239,8 @@
 
         <!-- FOR IPADS AND DESKTOPS -->
         <ul class="categories">
+
+
             <li class="category-item">WHAT'S HOT?</li>
             <li class="category-item">DESIGNER</li>
             <li class="category-item">FEATURED</li>
@@ -230,6 +255,7 @@
                     <div class="product-image mimosa">
                         <div class="dollar">
                             <div class="circle">
+                                <i class="fa-solid fa-bag-shopping"></i>
                                 <p class="p-shop-it">Shop it</p>
                             </div>
                         </div>
@@ -245,9 +271,11 @@
                     <div class="product-image wishDress">
                         <div class="dollar">
                             <div class="circle">
+                                <i class="fa-solid fa-bag-shopping"></i>
                                 <p class="p-shop-it">Shop it</p>
                             </div>
-                        </div>                    </div>
+                        </div>
+                    </div>
                     <div class="product-info">
                         <p class="product__title">WISHVITALISE DRESS</p>
                         <p class="product__price">$96.55</p>
@@ -258,9 +286,11 @@
                     <div class="product-image petrol-dress">
                         <div class="dollar">
                             <div class="circle">
+                                <i class="fa-solid fa-bag-shopping"></i>
                                 <p class="p-shop-it">Shop it</p>
                             </div>
-                        </div>                    </div>
+                        </div>
+                    </div>
                     <div class="product-info">
                         <p class="product__title">PETROL SWEATER</p>
                         <p class="product__price">$59.43</p>
@@ -271,9 +301,11 @@
                     <div class="product-image hot-shorts">
                         <div class="dollar">
                             <div class="circle">
+                                <i class="fa-solid fa-bag-shopping"></i>
                                 <p class="p-shop-it">Shop it</p>
                             </div>
-                        </div>                    </div>
+                        </div>     
+                    </div>
                     <div class="product-info">
                         <p class="product__title">HOT SHORTS</p>
                         <p class="product__price">$9.44</p>
@@ -284,9 +316,11 @@
                     <div class="product-image tank-dress">
                         <div class="dollar">
                             <div class="circle">
+                                <i class="fa-solid fa-bag-shopping"></i>
                                 <p class="p-shop-it">Shop it</p>
                             </div>
-                        </div>                    </div>
+                        </div>     
+                    </div>
                     <div class="product-info">
                         <p class="product__title">FEEL TANK</p>
                         <p class="product__price">$159.99</p>
@@ -297,9 +331,11 @@
                     <div class="product-image dress-lace">
                         <div class="dollar">
                             <div class="circle">
+                                <i class="fa-solid fa-bag-shopping"></i>
                                 <p class="p-shop-it">Shop it</p>
                             </div>
-                        </div>                    </div>
+                        </div>     
+                    </div>
                     <div class="product-info">
                         <p class="product__title">MIMOSA LACE DRESS</p>
                         <p class="product__price">$59.44</p>
@@ -325,9 +361,11 @@
                     <div class="product-image bag-1">
                         <div class="dollar">
                             <div class="circle">
+                                <i class="fa-solid fa-bag-shopping"></i>
                                 <p class="p-shop-it">Shop it</p>
                             </div>
-                        </div>                    </div>
+                        </div>     
+                    </div>
                     <div class="product-info">
                         <p class="product__title">ATMOS&HERE SHOPPER</p>
                         <p class="product__price">$49.95</p>
@@ -338,9 +376,11 @@
                     <div class="product-image bag-2">
                         <div class="dollar">
                             <div class="circle">
+                                <i class="fa-solid fa-bag-shopping"></i>
                                 <p class="p-shop-it">Shop it</p>
                             </div>
-                        </div>                    </div>
+                        </div>     
+                    </div>
                     <div class="product-info">
                         <p class="product__title">WISHVITALISE DRESS</p>
                         <p class="product__price">$99.99</p>
@@ -351,9 +391,11 @@
                     <div class="product-image sofi-dress">
                         <div class="dollar">
                             <div class="circle">
+                                <i class="fa-solid fa-bag-shopping"></i>
                                 <p class="p-shop-it">Shop it</p>
                             </div>
-                        </div>                    </div>
+                        </div>     
+                    </div>
                     <div class="product-info">
                         <p class="product__title">SOFI DRESS</p>
                         <p class="product__price">$99.99</p>
@@ -364,9 +406,11 @@
                     <div class="product-image tank-dress">
                         <div class="dollar">
                             <div class="circle">
+                                <i class="fa-solid fa-bag-shopping"></i>
                                 <p class="p-shop-it">Shop it</p>
                             </div>
-                        </div>                    </div>
+                        </div>     
+                    </div>
                     <div class="product-info">
                         <p class="product__title">TANK DRESS</p>
                         <p class="product__price">$99.99</p>
@@ -384,13 +428,13 @@
     <footer>
         <section class="big-footer">
             <div class="brands-container">
-                
+
 
                 <div class="brand-line"></div>
                 <p>FAVORITE BRANDS</p>
                 <div class="brand-line"></div>
             </div>
-            
+
             <ul class="favorite-brands">
                 <li class="brand-item addict"><a href=""></a></li>
                 <li class="brand-item abandon"><a href=""></a></li>
