@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+/* HEADER  */
+header {
+    height: 90px;
+    width: 1200px;
+    background-color: black;
+}
+
+.user-info {
+    display: flex;
+    background-color: #8cc34b;
+    width: 1200px;
+    height: 90px;
+
+    padding: 15px 30px;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+.user {
+    width: 400px;
+}
+
+.user-photo {
+    /* margin-top: 14px;
+    margin-left: 42px; */
+    background-image: url('static/images/user-photo.jpg');
+    width: 60px;
+    height: 60px;
+    float: left;
+    box-sizing: border-box;
+    margin-right: 10px;
+}
+
+.user-name {
+    /* margin-top: 14px; */
+    /* margin-left: 120px; */
+}
+
+.user-name__name {
+    color: white;
+}
+
+.user-name__email {
+    color: #d2e8b9;
+}
+
+.network-items {
+
+    list-style-type: none;
+}
+
+.network-item {
+
+    display: inline-block;
+    /* height: 75px; */
+    width: 70px;
+}
+
+
+/* MAIN  */
+
+
+main {
+    width: 1200px;
+    height: auto;
+}
+
+.about-student {
+    width: 1200px;
+    height: auto;
+    box-sizing: border-box;
+    padding: 80px 120px;
+}
+
+.about-student .image {
+    width: 145px;
+    height: 145px;
+    display: inline-block;
+    float: left;
+}
+
+.about-student .image {
+    background-image: url('static/images/hello.png');
+}
+
+.about-student .idea {
+    background-image: url('static/images/picture2.png');
+}
+
+.about-student h1 {
+    text-align: center;
+}
+
+.about-student h3 {
+    text-align: center;
+    margin: 1% 0;
+    color: #727272;
+    font-weight: 300;
+}
+
+.description {
+    display: inline-block;
+    width: 45%;
+    height: auto;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: 4%;
+    margin-top: 40px;
+}
+
+.text-description p {
+    color: #858585;
+    font-size: 18px;
+    overflow: hidden;
+    text-align: left;
+}
+
+/* COURSES  */
+
+.courses {
+    box-sizing: border-box;
+    padding: 80px 130px;
+    width: 1200px;
+    background-color: #f6f7f2;
+}
+
+.course-block {
+    display: inline-block;
+    text-align: center;
+}
+
+.course-card {
+    box-sizing: border-box; /* fix moving another element, while hover effect works */
+    display: inline-block;
+    border: solid 5px #f6f7f2;  /* fix moving content */
+    width: 300px;
+    height: 480px;
+    margin-top: 50px;
+    vertical-align: top;
+    text-align: center;
+    background-color: white;
+    
+}
+
+.course-card:hover,
+.course-card:active {
+    border: solid 5px #9b9c95;
+}
+
+
+.big-card {
+    height: 450px;
+}
+
+.courses h1,
+.courses h3,
+.courses h4 {
+    text-align: center;
+}
+
+.courses h3 {
+    color: #848483;
+    font-weight: 300;
+}
+
+
+.course-title {
+    font-size: 24px;
+}
+
+.course-title:hover,
+.course-title:active {
+    color: green;
+}
+
+.course-description {
+    font-size: 18px;
+    text-align: left;
+
+    
+    color: #7b7b7b;
+    box-sizing: border-box;
+    padding: 10px;
+
+}
+
+.course-image {
+    width: 290px;
+    height: 245px;
+    box-sizing: border-box;
+    
+}
+
+.js {
+    background-image: url("static/images/js.png");
+}
+
+.jQuery {
+    background-image: url("static/images/jQuery.png");
+}
+
+.baseElements {
+    background-image: url("static/images/black.png");
+}
+
+.adaptiveSites {
+    background-image: url("static/images/adaptive.png");
+}
+
+.buttonGenerator {
+    background-image: url("static/images/button.png");
+}
+
+.css {
+    background-image: url("static/images/css.png");
+}
+
+.check-visability {
+
+    color: #727272;
+}
+
+input[type=checkbox] {
+    transform: scale(1.7);
+    margin-right: 10px;
+}
+
+.checkbox-visability:checked + .check-label {
+    color: #acd27d;
+    font-weight: bold;
+}
+
+
+/* FOOTER  */
+
+footer {
+
+    width: 1200px;
+    height: 70px;
+
+    box-sizing: border-box;
+
+    background-color: black;
+    color: grey;
+    text-align: center;
+
+    padding: 0 20%;
+    font-size: 18px;
+}
