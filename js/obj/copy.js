@@ -1,23 +1,22 @@
 
-
 let user = {
-    name: 'Ivan'
+    name: 'Bob'
 }
 
-let permissionRead = {
-    canView: true
+let readPermision = {
+    canRead: true
 }
 
-let permissionWrite = {
-    canEdit: true
+let writePermision = {
+    canWrite: true
 }
 
 console.log(user);
-console.log(Object.assign(user, permissionRead, permissionWrite));
-
+Object.assign(user, writePermision, readPermision);
+console.log(user);
 
 let newUser = Object.assign({}, user);
+newUser.name = 'Mike';
 
-newUser.name = 'Bill';
 console.log(user);
 console.log(newUser);
