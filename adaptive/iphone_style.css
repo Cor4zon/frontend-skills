@@ -132,8 +132,7 @@ header {
 }
 
 .big-cart {
-  /* TODO: урбать это свинство */
-  max-width: 93%;
+  width: 92%;
 }
 
 .cart {
@@ -183,7 +182,7 @@ header {
 }
 
 .menu {
-  padding: 0 30px 0 15px;
+  /* padding: 0 30px 0 15px; */
   height: 100px;
   width: 100%;
 }
@@ -196,6 +195,9 @@ header {
   justify-content: space-between;
   align-items: center;
   border: none;
+
+  width: 92%;
+  margin-left: 15px;
 }
 
 .menu-btn {
@@ -476,7 +478,7 @@ header {
   height: 66px;
   
   border: none;
-  border-bottom: 4px #dd6b44 solid;
+  border-bottom: 8px #dd6b44 solid;
 }
 
 .add-to-cart-btn:hover {
@@ -511,8 +513,8 @@ header {
   font-size: 1.2rem;
   color: white;
   background: black;
-  margin-bottom: 30px;
-  margin-top: 30px;
+  margin-bottom: 35px;
+  margin-top: 40px;
 }
 
 .load-more:hover,

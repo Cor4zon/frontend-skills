@@ -265,11 +265,10 @@
     height: 10px;
     margin-left: 20px;
   }
-  
+
   .dot:hover {
     background-color: #dd6b44;
   }
-
 
   .big-rectangle {
     background-color: rgb(120, 100, 93);
@@ -356,7 +355,6 @@
   .plus-btn:active {
     cursor: pointer;
   }
-  
 
   .contacts {
     width: 60%;
@@ -445,21 +443,11 @@
   .offer-1 {
     background-image: url("images/promo1.png");
     background-repeat: no-repeat;
-    /* width: 50%;
-    height: 100%; */
   }
 
   .offer-2 {
     background-image: url("images/promo2.png");
-    /* width: 100%;
-    height: 50%; */
   }
-
-  /* .offer-3,
-  .offer-4 {
-    width: 50%;
-    height: 50%;
-  } */
 
   .offer-3 {
     background-image: url("images/promo3.png");
@@ -469,111 +457,13 @@
     background-image: url("images/promo4.png");
   }
 
+
   .offer-1 a,
   .offer-2 a,
   .offer-3 a,
   .offer-4 a {
-    text-decoration: none;
-    color: white;
-    display: block;
     height: 100%;
-  }
-
-  .offer-4 a {
-    color: white;
-    font-size: "Red Hat Mono";
-    font-weight: 700;
-    font-size: 2rem;
-  }
-
-  .offer-1,
-  .offer-2,
-  .offer-3,
-  .offer-4 {
-    position: relative;
-    background-size: contain;
-  }
-
-  /* OFFER 1 */
-  .offer-1__text {
-    text-align: center;
-
-    position: absolute;
-    bottom: 15%;
-    right: 5%;
-  }
-
-  .p-best {
-    font-size: 33px;
-    font-weight: bolder;
-    margin-bottom: -15px;
-    color: black;
-  }
-
-  .p-outfits {
-    font-size: 52px;
-    font-family: "Amatic SC", cursive;
-    color: black;
-  }
-
-  .n-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .n-line {
-    background: black;
-    height: 1px;
-    width: 30%;
-  }
-
-  .n-background {
-    background-image: url(images/items/n-sign.png);
-    background-size: contain;
-    height: 35px;
-    width: 30px;
-    background-repeat: no-repeat;
-    background-position: center;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .p-looks {
-    font-size: 40px;
-    font-weight: bold;
-    color: #4fafa0;
-  }
-
-  /* OFFER 2 */
-  .offer-2__image {
-    background-image: url(images/summer-party.png);
-    background-size: contain;
-    height: 75px;
-    width: 75px;
-    margin: 1rem;
-  }
-
-  /* OFFER 3 */
-  .p-best-sells {
-    position: absolute;
-    bottom: 5px;
-    left: 15%;
-    font-family: "Amatic SC", cursive;
-    color: white;
-    font-size: 2rem;
-  }
-
-  /* OFFER 4  */
-  .offer-4__text {
-    text-align: center;
-    position: absolute;
-    bottom: 15%;
-    left: 15%;
-    color: white;
-    font-size: 1rem;
+    width: 100%;
   }
 
   /* CATEGORIES  */
@@ -749,57 +639,58 @@
   .favorite-brands {
     list-style-type: none;
     display: flex;
+    justify-content: center;
     width: 100%;
   }
 
   .brand-item {
     display: inline-block;
     height: 100px;
-    width: 100px;
+    width: 140px;
 
     background-repeat: no-repeat;
     background-position: center;
     background-position: contain;
-    margin: 0 2rem;
+    /* background: no-repeat center contain; */
   }
 
   .brand-item a {
     display: block;
     height: 100%;
-    width: 90px;
+    width: 140px;
     text-decoration: none;
   }
 
   .addict {
-    background-image: url("images/brands/1.png");
+    background-image: url("images/brands/addict.png");
   }
 
   .abandon {
-    background-image: url("images/brands/2.png");
+    background-image: url("images/brands/abandonShip.png");
   }
 
   .boy {
-    background-image: url("images/brands/3.png");
+    background-image: url("images/brands/boyLondon.png");
   }
 
   .converse {
-    background-image: url("images/brands/4.png");
+    background-image: url("images/brands/converse.png");
   }
 
   .edwin {
-    background-image: url("images/brands/4.png");
+    background-image: url("images/brands/edwin.png");
   }
 
   .adidas {
-    background-image: url("images/brands/4.png");
+    background-image: url("images/brands/adidas.png");
   }
 
   .grenson {
-    background-image: url("images/brands/4.png");
+    background-image: url("images/brands/grenson.png");
   }
 
   .calvin-klein {
-    background-image: url("images/brands/5.png");
+    background-image: url("images/brands/calvinKlein.png");
   }
 
   .about-us {
@@ -838,8 +729,8 @@
 
   .we-accept {
     background-color: #f7f7f7;
-    height: 25px;
-    width: 50%;
+    height: 30px;
+    width: 55%;
     background-repeat: no-repeat;
     background-image: url("images/we-accept.png");
     background-size: contain;
@@ -851,6 +742,7 @@
     display: flex;
     justify-content: space-between;
     padding: 2rem 5%;
+    padding-left: 0;
     background-color: #ededed;
   }
 
@@ -906,6 +798,10 @@
     color: #544f4d;
     font-size: 16px;
     font-weight: bold;
+  }
+
+  .social-item {
+    margin-right: 10px;
   }
 
   .base-info li:first-child:not(.social-item),
@@ -989,6 +885,7 @@
   .info-item {
     color: #8d8d8d;
     font-size: 1rem;
+    margin-left: 1rem;
   }
 
   li a {
