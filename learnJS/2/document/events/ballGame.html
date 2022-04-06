@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <style>
+        #field {
+            width: 200px;
+            height: 150px;
+            border: 10px solid black;
+            background-color: #00FF00;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body style="height:2000px">
+
+    Нажмите на поле для перемещения мяча.
+    <br> Мяч не должен выходить за границы поля.
+
+
+    <div id="field">
+        <img src="https://ru.js.cx/clipart/ball.svg" id="ball"> . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . . . . . . . . . .
+    </div>
+
+    <script>
+        const field = document.querySelector('#field');
+        const ball = document.querySelector('#ball');
+        ball.style.position = 'absolute';
+        // transition: 1s all;
+        ball.style.transition = "1s all";
+        let yCoordinate = 0;
+        let xCoordinate = 0;
+
+        const moveBall = (event) => {
+            // console.log(event.clientX);
+            console.log(event.clientX);
+
+            yCoordinate = event.clientY - 20;
+            xCoordinate = event.clientX - 20;
+
+            yCoordinate = (event.clientY < 72) ? 52 : yCoordinate;
+
+            yCoordinate = (event.clientY > 185) ? 165 : yCoordinate;
+
+            xCoordinate = (event.clientX < 38) ? 18 : xCoordinate;
+
+            xCoordinate = (event.clientX > 197) ? 177 : xCoordinate;
+
+            ball.style.left = xCoordinate + "px";
+            ball.style.top = yCoordinate + "px";
+
+            console.log(ball.style);
+        }
+
+        field.addEventListener('click', moveBall);
+    </script>
+
+</body>
+
+</html>

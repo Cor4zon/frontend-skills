@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <style>
+        span {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul class="tree" id="tree">
+        <li><span>Животные</span>
+            <ul>
+                <li><span>Млекопитающие</span>
+                    <ul>
+                        <li><span>Коровы</span></li>
+                        <li><span>Ослы</li>
+                        <li><span>Собаки</li>
+                        <li><span>Тигры</li>
+                    </ul>
+                </li>
+                <li><span>Другие</span>
+                    <ul>
+                        <li><span>Змеи</span></li>
+                        <li><span>Птицы</span></li>
+                        <li><span>Ящерицы</span></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><span>Рыбы</span>
+            <ul>
+                <li><span>Аквариумные</span>
+                    <ul>
+                        <li><span>Гуппи</span></li>
+                        <li><span>Скалярии</span></li>
+                    </ul>
+                </li>
+                <li><span>Морские</span>
+                    <ul>
+                        <li><span>Морская форель</span></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <script>
+        const globalUL = document.querySelector('#tree');
+
+        const dropListHandler = (event) => {
+            const elementsToHide = event.target.closest('li').children;
+ 
+            for (element of elementsToHide) {
+                if (element.tagName === 'UL') {
+                    element.hidden = !element.hidden;
+                }
+            }
+        }
+
+        globalUL.addEventListener('click', dropListHandler);
+    </script>
+</body>
+
+</html>
