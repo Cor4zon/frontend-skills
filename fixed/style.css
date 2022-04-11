@@ -194,9 +194,11 @@ main {
   text-align: center;
   vertical-align: top;
   margin-top: 50px;
+  margin-left: 15px;
   background-color: white;
   border: solid 5px #f6f7f2;
-  /* fix moving content */
+  -webkit-box-shadow: 0 1px 1px #d7d6d6;
+          box-shadow: 0 1px 1px #d7d6d6;
 }
 
 .course-block :hover,
@@ -232,9 +234,9 @@ main {
 .courses {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 80px 130px;
+  padding: 80px 100px;
   width: 1200px;
-  background-color: #f6f7f2;
+  background-image: url("static/images/bg.png");
 }
 
 .courses h1,
@@ -349,17 +351,21 @@ span {
 
 .check-visability {
   height: 60px;
-  background-color: #f6f9e9;
+  background-color: #f6f7f2;
   color: #727272;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-left: 22px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.check-visability label {
+  padding-left: 10px;
 }
 
 input[type="checkbox"] {
