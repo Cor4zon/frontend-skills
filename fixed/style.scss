@@ -154,7 +154,7 @@ main {
 
   h5 {
     font-size: 21px;
-    margin-left: 8px;
+    margin-bottom: 10px;
   }
 
   p {
@@ -163,6 +163,7 @@ main {
     overflow: hidden;
     text-align: left;
     width: 285px;
+    line-height: 1.3rem;
   }
 
   a {
@@ -171,13 +172,6 @@ main {
 }
 
 /* COURSES  */
-
-.courses {
-  box-sizing: border-box;
-  padding: 80px 130px;
-  width: 1200px;
-  background-color: #f6f7f2;
-}
 
 .course-block {
   display: inline-block;
@@ -216,6 +210,11 @@ main {
 }
 
 .courses {
+  box-sizing: border-box;
+  padding: 80px 130px;
+  width: 1200px;
+  background-color: #f6f7f2;
+  
   h1,
   h3,
   h4 {
@@ -223,20 +222,25 @@ main {
     font-family: "Myriad Pro", Myriad;
     font-weight: 400;
   }
+  
+  h1 {
+    font-size: 42px;
+    font-weight: bold;
+  }
 
   h3 {
     color: #848483;
     font-weight: 400;
     margin-top: 12px;
   }
-
+  
   h4 {
     margin: 20px;
     text-align: left;
     padding-left: 8px;
-
+    
     font-family: "Myriad Pro", Myriad;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 21px;
   }
 }
@@ -358,10 +362,22 @@ footer {
   color: grey;
   text-align: center;
 
-  padding: 0 20%;
+  padding: 20px 20%;
   font-size: 18px;
+
+  p {
+    font-size: 14px;
+  }
 }
 
 .course-card.checkedSeen {
   background-color: #74992e !important;
+}
+
+
+// CHECKBOX EFFECT 
+.checkbox-effect {
+    width: 300px;
+    height: 434px;
+    position: absolute;
 }

@@ -11,18 +11,7 @@
     <!-- FONT AWESOME  -->
     <script src="https://kit.fontawesome.com/72fbd2b995.js" crossorigin="anonymous"></script>
 
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-
-    <script>
-        $(document).ready(function() {
-            // $('input[type="checkbox"]:checked').closest('.course-card').addClass('checkedSeen');
-            $("input[type='checkbox']:checked").hide();
-        });
-        
-    </script>
-
 </head>
 
 <body>
@@ -110,6 +99,8 @@
                 <h3>которые мне помогут в выполнении этого задания</h3>
 
                 <div class="course-block">
+                    <div class="checkbox-effect"></div>
+
                     <div class="course-card">
                         <a href="https://www.yandex.ru/" target="_blank">
                             <div class="course-image js"></div>
@@ -135,10 +126,12 @@
                     </div>
                 </div>
 
-            
+
 
 
                 <div class="course-block">
+                    <div class="checkbox-effect"></div>
+
                     <div class="course-card">
                         <a href="https://www.yandex.ru/" target="_blank">
                             <div class="course-image jQuery"></div>
@@ -163,6 +156,8 @@
                 </div>
 
                 <div class="course-block">
+                    <div class="checkbox-effect"></div>
+
                     <div class="course-card">
                         <a href="https://www.yandex.ru/" target="_blank">
                             <div class="course-image baseElements"></div>
@@ -190,6 +185,8 @@
 
 
                 <div class="course-block">
+                    <div class="checkbox-effect"></div>
+
                     <div class="course-card">
                         <a href="https://www.yandex.ru/" target="_blank">
                             <div class="course-image adaptiveSites"></div>
@@ -213,6 +210,8 @@
                 </div>
 
                 <div class="course-block">
+                    <div class="checkbox-effect"></div>
+
                     <div class="course-card">
                         <a href="https://www.yandex.ru/" target="_blank">
                             <div class="course-image buttonGenerator"></div>
@@ -241,6 +240,7 @@
 
 
                 <div class="course-block">
+                    <div class="checkbox-effect"></div>
 
                     <div class="course-card">
                         <a href="https://www.yandex.ru/" target="_blank">
@@ -270,10 +270,22 @@
         </main>
 
         <footer>
-            <p>А это футер, с текстом внутри. Он должен быть прибит к низу окна браузера не зависимо от количества
+            <p>А это футер, с текстом внутри. Он должен быть прибит к низу окна браузера,<br> не зависимо от количества
                 контента на странце и размера окна</p>
         </footer>
     </div>
+
+    <script>
+        $(".checkbox-visability").change(function () {
+            const effectDiv = this.closest('.course-block').querySelector('.checkbox-effect');
+            if (this.checked) {
+                effectDiv.style.backgroundColor = '#ecf4e2';
+                effectDiv.style.opacity = '50%';
+            } else {
+                effectDiv.style.backgroundColor = null;
+            }
+        });
+    </script>
 </body>
 
 </html>
