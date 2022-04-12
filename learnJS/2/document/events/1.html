@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>press me</button>
+
+    <script>
+        class Menu {
+            handleEvent(event) {
+                let method = 'on' + event.type[0].toUpperCase() + event.type.slice(1);
+                
+                console.log(`${this[method](event)}`);
+                
+                this[method](event);
+            }
+
+            onMouseup() {
+                event.target.innerHTML = 'BUTTON CLICKED';
+            }
+
+            onMousedown() {
+                event.target.innerHTML = '... и отжата'
+            }
+        }
+
+        let menu = new Menu();
+        
+        const b = document.querySelector('button');
+        b.addEventListener('mousedown', menu);
+        b.addEventListener('mouseup', menu);
+    </script>
+</body>
+</html>

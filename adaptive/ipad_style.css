@@ -84,6 +84,7 @@
     justify-content: space-between;
     align-content: space-evenly;
     height: 175px;
+    padding-right: 0;
   }
 
   /* .shop-info a {
@@ -126,6 +127,10 @@
     padding: 0 20px;
   }
 
+  .your-cart i {
+    color: #c1c1c1;
+  }
+
   .p-placeholder {
     color: #949393;
     font-size: 12px;
@@ -158,13 +163,16 @@
   }
 
   .menu {
-    /* padding: 0; */
     height: 50px;
+    padding: 0 15px;
+    padding-right: 30px;
   }
 
   .menu button {
     font-size: 1.5rem;
     padding: 0 2%;
+    width: 100%;
+    margin-left: 0;
   }
 
   .menu-btn p {
@@ -175,14 +183,23 @@
     display: block;
     width: 100%;
     height: 300px;
-
-    /* background-image: url("images/background.png"); */
-    background-image: url("images/background.png"),
-      linear-gradient(to right, #f6f3ec, #e9dfd7);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
   }
+
+  .background-image li {
+    display: none;
+  }
+  
+  .background-image li img {
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
 
   .left-scroll {
     position: absolute;
@@ -206,7 +223,18 @@
     opacity: 0.902;
   }
 
+  
+  .left-scroll:hover,
+  .right-scroll:hover,
+  .left-scroll:active,
+  .right-scroll:active {
+    cursor: pointer;
+  }
+
   .crazy_summer-box {
+    position: absolute;
+    top: -15%;
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -249,6 +277,17 @@
     cursor: pointer;
   }
 
+  .strangeLine {
+    background-image: url("images/strangeLine.png");
+    background-size: contain;
+    height: 10px;
+    width: 64%;
+    opacity: 85%;
+    position: absolute;
+    top: 554px;
+    top: 489px;
+  }
+
   .dot-set {
     display: flex;
     justify-content: center;
@@ -265,11 +304,10 @@
     height: 10px;
     margin-left: 20px;
   }
-  
+
   .dot:hover {
     background-color: #dd6b44;
   }
-
 
   .big-rectangle {
     background-color: rgb(120, 100, 93);
@@ -314,7 +352,7 @@
     flex-wrap: nowrap;
     width: 100%;
     height: 55px;
-    margin-top: 50px;
+    margin-top: 65px;
     margin-bottom: 25px;
 
     background-color: #ededed;
@@ -356,7 +394,6 @@
   .plus-btn:active {
     cursor: pointer;
   }
-  
 
   .contacts {
     width: 60%;
@@ -365,9 +402,8 @@
   }
 
   .contact-us p {
-    display: inline-block;
-    width: 15%;
-    padding: 25px;
+    display: flex;
+    justify-content: right;
     font-size: 12px;
   }
 
@@ -393,14 +429,6 @@
 
   /* MAIN  */
   .special-offers {
-    /* display: flex;
-    flex-wrap: wrap;
-    justify-content: center; */
-
-    /* original  */
-    /* width: 730px;
-    height: 250px; */
-
     width: 820px;
     height: 282px;
     padding: 0 2%;
@@ -439,27 +467,17 @@
   .offer-4 {
     background-repeat: no-repeat;
     background-size: cover;
-    border: solid 3px white;
+    border: solid 1px white;
   }
 
   .offer-1 {
     background-image: url("images/promo1.png");
     background-repeat: no-repeat;
-    /* width: 50%;
-    height: 100%; */
   }
 
   .offer-2 {
     background-image: url("images/promo2.png");
-    /* width: 100%;
-    height: 50%; */
   }
-
-  /* .offer-3,
-  .offer-4 {
-    width: 50%;
-    height: 50%;
-  } */
 
   .offer-3 {
     background-image: url("images/promo3.png");
@@ -467,113 +485,26 @@
 
   .offer-4 {
     background-image: url("images/promo4.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .p-fall {
+    color: white;
+    font-size: 36px;
+    font-weight: 400;
   }
 
   .offer-1 a,
   .offer-2 a,
   .offer-3 a,
   .offer-4 a {
+    height: 100%;
+    width: 100%;
+    display: block;
     text-decoration: none;
     color: white;
-    display: block;
-    height: 100%;
-  }
-
-  .offer-4 a {
-    color: white;
-    font-size: "Red Hat Mono";
-    font-weight: 700;
-    font-size: 2rem;
-  }
-
-  .offer-1,
-  .offer-2,
-  .offer-3,
-  .offer-4 {
-    position: relative;
-    background-size: contain;
-  }
-
-  /* OFFER 1 */
-  .offer-1__text {
-    text-align: center;
-
-    position: absolute;
-    bottom: 15%;
-    right: 5%;
-  }
-
-  .p-best {
-    font-size: 33px;
-    font-weight: bolder;
-    margin-bottom: -15px;
-    color: black;
-  }
-
-  .p-outfits {
-    font-size: 52px;
-    font-family: "Amatic SC", cursive;
-    color: black;
-  }
-
-  .n-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .n-line {
-    background: black;
-    height: 1px;
-    width: 30%;
-  }
-
-  .n-background {
-    background-image: url(images/items/n-sign.png);
-    background-size: contain;
-    height: 35px;
-    width: 30px;
-    background-repeat: no-repeat;
-    background-position: center;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .p-looks {
-    font-size: 40px;
-    font-weight: bold;
-    color: #4fafa0;
-  }
-
-  /* OFFER 2 */
-  .offer-2__image {
-    background-image: url(images/summer-party.png);
-    background-size: contain;
-    height: 75px;
-    width: 75px;
-    margin: 1rem;
-  }
-
-  /* OFFER 3 */
-  .p-best-sells {
-    position: absolute;
-    bottom: 5px;
-    left: 15%;
-    font-family: "Amatic SC", cursive;
-    color: white;
-    font-size: 2rem;
-  }
-
-  /* OFFER 4  */
-  .offer-4__text {
-    text-align: center;
-    position: absolute;
-    bottom: 15%;
-    left: 15%;
-    color: white;
-    font-size: 1rem;
   }
 
   /* CATEGORIES  */
@@ -740,8 +671,8 @@
 
   .big-footer p {
     font-size: 15px;
+    font-weight: 600;
     color: #414141;
-
     min-width: 200px;
     text-align: center;
   }
@@ -749,57 +680,63 @@
   .favorite-brands {
     list-style-type: none;
     display: flex;
+    justify-content: center;
     width: 100%;
   }
 
   .brand-item {
     display: inline-block;
     height: 100px;
-    width: 100px;
+    width: 140px;
 
     background-repeat: no-repeat;
     background-position: center;
     background-position: contain;
-    margin: 0 2rem;
+    /* background: no-repeat center contain; */
   }
 
   .brand-item a {
     display: block;
     height: 100%;
-    width: 90px;
+    width: 140px;
     text-decoration: none;
   }
 
   .addict {
-    background-image: url("images/brands/1.png");
+    background-image: url("images/brands/addict.png");
   }
 
   .abandon {
-    background-image: url("images/brands/2.png");
+    background-image: url("images/brands/abandonShip.png");
   }
 
   .boy {
-    background-image: url("images/brands/3.png");
+    background-image: url("images/brands/boyLondon.png");
   }
 
   .converse {
-    background-image: url("images/brands/4.png");
+    background-image: url("images/brands/converse.png");
   }
 
   .edwin {
-    background-image: url("images/brands/4.png");
+    background-image: url("images/brands/edwin.png");
   }
 
   .adidas {
-    background-image: url("images/brands/4.png");
+    background-image: url("images/brands/adidas.png");
   }
 
   .grenson {
-    background-image: url("images/brands/4.png");
+    background-image: url("images/brands/grenson.png");
   }
 
   .calvin-klein {
-    background-image: url("images/brands/5.png");
+    background-image: url("images/brands/calvinKlein.png");
+  }
+
+  .edwin,
+  .grenson {
+    display: none;
   }
 
   .about-us {
@@ -838,8 +775,8 @@
 
   .we-accept {
     background-color: #f7f7f7;
-    height: 25px;
-    width: 50%;
+    height: 30px;
+    width: 55%;
     background-repeat: no-repeat;
     background-image: url("images/we-accept.png");
     background-size: contain;
@@ -851,11 +788,12 @@
     display: flex;
     justify-content: space-between;
     padding: 2rem 5%;
+    padding-left: 0;
     background-color: #ededed;
   }
 
   .base-info-links {
-    width: 70%;
+    width: 55%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -906,6 +844,10 @@
     color: #544f4d;
     font-size: 16px;
     font-weight: bold;
+  }
+
+  .social-item {
+    margin-right: 10px;
   }
 
   .base-info li:first-child:not(.social-item),
@@ -989,6 +931,7 @@
   .info-item {
     color: #8d8d8d;
     font-size: 1rem;
+    margin-left: 1rem;
   }
 
   li a {
@@ -1010,8 +953,8 @@
 
   .black-bar p {
     color: #8d8d8d;
-
     font-size: 1rem;
+    line-height: 1.3rem;
   }
 
   .black-bar-menu {
@@ -1049,5 +992,28 @@
   .offer-4 {
     grid-column-start: 3;
     grid-column-end: 4;
+  }
+
+  .p-fall {
+    color: white;
+    font-size: 25px;
+    font-family: "Myriad Pro";
+    line-height: 0.833;
+    text-align: center;
+    position: relative;
+    top: 32%;
+    left: -15%;
+  }
+
+  .offer-4 button {
+    background-color: rgb(79, 175, 160);
+    position: relative;
+    left: 10%;
+    top: 38%;
+    width: 98px;
+    height: 29px;
+    color: white;
+    font-family: "Myriad Pro", Myriad;
+    cursor: zoom-in;
   }
 }

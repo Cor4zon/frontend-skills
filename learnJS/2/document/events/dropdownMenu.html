@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <style>
+        p:hover,
+        p:active {
+            cursor: pointer;
+        }
+
+        /* https://stackoverflow.com/questions/38872290/how-to-get-pseudo-element */
+
+        p:before {
+            content: "▼";
+        }
+    </style>
+</head>
+
+<body>
+
+    ▶ ▼
+    <p>Сладости (нажми меня)!</p>
+    <ul class="dropMenu">
+        <li>Пирожное</li>
+        <li>Пончик</li>
+        <li>Мёд</li>
+    </ul>
+
+
+    <script>
+        const pButton = document.querySelector('p');
+        const menu = document.querySelector('.dropMenu');
+
+        // https://stackoverflow.com/questions/38872290/how-to-get-pseudo-element
+        const before = window.getComputedStyle(
+            document.querySelector('p'), ':before'
+        );
+
+        console.log(before.content);
+
+        const dropMenuHandler = (event) => {
+
+            if (menu.hidden) {
+                menu.hidden = false;
+                before.content = "▼";
+
+            } else {
+                menu.hidden = true;
+                before.content = "▶";
+            }
+        }
+
+        pButton.addEventListener('click', dropMenuHandler);
+    </script>
+
+</body>
+
+</html>
