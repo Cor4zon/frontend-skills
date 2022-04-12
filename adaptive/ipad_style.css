@@ -84,6 +84,7 @@
     justify-content: space-between;
     align-content: space-evenly;
     height: 175px;
+    padding-right: 0;
   }
 
   /* .shop-info a {
@@ -126,6 +127,10 @@
     padding: 0 20px;
   }
 
+  .your-cart i {
+    color: #c1c1c1;
+  }
+
   .p-placeholder {
     color: #949393;
     font-size: 12px;
@@ -158,13 +163,16 @@
   }
 
   .menu {
-    /* padding: 0; */
     height: 50px;
+    padding: 0 15px;
+    padding-right: 30px;
   }
 
   .menu button {
     font-size: 1.5rem;
     padding: 0 2%;
+    width: 100%;
+    margin-left: 0;
   }
 
   .menu-btn p {
@@ -175,14 +183,23 @@
     display: block;
     width: 100%;
     height: 300px;
-
-    /* background-image: url("images/background.png"); */
-    background-image: url("images/background.png"),
-      linear-gradient(to right, #f6f3ec, #e9dfd7);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
   }
+
+  .background-image li {
+    display: none;
+  }
+  
+  .background-image li img {
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
 
   .left-scroll {
     position: absolute;
@@ -206,7 +223,18 @@
     opacity: 0.902;
   }
 
+  
+  .left-scroll:hover,
+  .right-scroll:hover,
+  .left-scroll:active,
+  .right-scroll:active {
+    cursor: pointer;
+  }
+
   .crazy_summer-box {
+    position: absolute;
+    top: -15%;
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -247,6 +275,17 @@
   .background button:hover,
   .background button:active {
     cursor: pointer;
+  }
+
+  .strangeLine {
+    background-image: url("images/strangeLine.png");
+    background-size: contain;
+    height: 10px;
+    width: 64%;
+    opacity: 85%;
+    position: absolute;
+    top: 554px;
+    top: 489px;
   }
 
   .dot-set {
@@ -313,7 +352,7 @@
     flex-wrap: nowrap;
     width: 100%;
     height: 55px;
-    margin-top: 50px;
+    margin-top: 65px;
     margin-bottom: 25px;
 
     background-color: #ededed;
@@ -363,9 +402,8 @@
   }
 
   .contact-us p {
-    display: inline-block;
-    width: 15%;
-    padding: 25px;
+    display: flex;
+    justify-content: right;
     font-size: 12px;
   }
 
@@ -391,14 +429,6 @@
 
   /* MAIN  */
   .special-offers {
-    /* display: flex;
-    flex-wrap: wrap;
-    justify-content: center; */
-
-    /* original  */
-    /* width: 730px;
-    height: 250px; */
-
     width: 820px;
     height: 282px;
     padding: 0 2%;
@@ -437,7 +467,7 @@
   .offer-4 {
     background-repeat: no-repeat;
     background-size: cover;
-    border: solid 3px white;
+    border: solid 1px white;
   }
 
   .offer-1 {
@@ -455,8 +485,16 @@
 
   .offer-4 {
     background-image: url("images/promo4.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
+  .p-fall {
+    color: white;
+    font-size: 36px;
+    font-weight: 400;
+  }
 
   .offer-1 a,
   .offer-2 a,
@@ -464,6 +502,9 @@
   .offer-4 a {
     height: 100%;
     width: 100%;
+    display: block;
+    text-decoration: none;
+    color: white;
   }
 
   /* CATEGORIES  */
@@ -630,8 +671,8 @@
 
   .big-footer p {
     font-size: 15px;
+    font-weight: 600;
     color: #414141;
-
     min-width: 200px;
     text-align: center;
   }
@@ -693,6 +734,11 @@
     background-image: url("images/brands/calvinKlein.png");
   }
 
+  .edwin,
+  .grenson {
+    display: none;
+  }
+
   .about-us {
     display: flex;
     flex-direction: column;
@@ -747,7 +793,7 @@
   }
 
   .base-info-links {
-    width: 70%;
+    width: 55%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -907,8 +953,8 @@
 
   .black-bar p {
     color: #8d8d8d;
-
     font-size: 1rem;
+    line-height: 1.3rem;
   }
 
   .black-bar-menu {
@@ -946,5 +992,28 @@
   .offer-4 {
     grid-column-start: 3;
     grid-column-end: 4;
+  }
+
+  .p-fall {
+    color: white;
+    font-size: 25px;
+    font-family: "Myriad Pro";
+    line-height: 0.833;
+    text-align: center;
+    position: relative;
+    top: 32%;
+    left: -15%;
+  }
+
+  .offer-4 button {
+    background-color: rgb(79, 175, 160);
+    position: relative;
+    left: 10%;
+    top: 38%;
+    width: 98px;
+    height: 29px;
+    color: white;
+    font-family: "Myriad Pro", Myriad;
+    cursor: zoom-in;
   }
 }
