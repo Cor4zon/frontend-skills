@@ -52,6 +52,11 @@ header {
   min-width: 370px;
 }
 
+.customer-care a {
+  text-decoration: none;
+  color: black;
+}
+
 .customer-blackline {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -111,21 +116,20 @@ header {
   margin-left: 8px;
 }
 
+.customer-account a {
+  color: #838383;
+  text-decoration: none;
+  min-width: 250px;
+  color: white;
+  text-decoration: none;
+}
+
 .customer-account i,
 .search i {
   font-size: 2rem;
   color: white;
   -webkit-transform: scale(-1, 1);
           transform: scale(-1, 1);
-}
-
-.customer-care a {
-  color: #838383;
-  text-decoration: none;
-}
-
-.customer-account a {
-  min-width: 250px;
 }
 
 .customer-account a,
@@ -146,7 +150,6 @@ header {
           justify-content: center;
   width: 20%;
   height: 100%;
-  /* border-left: #838383 solid 2px; */
 }
 
 .search a {
@@ -167,10 +170,6 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   margin-left: 60px;
-}
-
-.big-cart {
-  /* width: 92%; */
 }
 
 .cart {
@@ -225,7 +224,6 @@ header {
 }
 
 .menu {
-  /* padding: 0 30px 0 15px; */
   height: 100px;
   width: 100%;
 }
@@ -244,7 +242,6 @@ header {
       -ms-flex-align: center;
           align-items: center;
   border: none;
-  /* width: 92%; */
   margin-left: 15px;
 }
 
@@ -288,6 +285,42 @@ header {
   padding: 25px;
 }
 
+.contact-us input {
+  width: 100%;
+  padding: 0 2rem;
+  padding-top: 10px;
+  font-size: 1.5rem;
+  font-style: italic;
+  height: 90px;
+  margin-left: 15px;
+  background-color: #ededed;
+  border: none;
+  -webkit-box-shadow: 0px 8px 0px 0px #ededed;
+          box-shadow: 0px 8px 0px 0px #ededed;
+}
+
+.contact-us a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  margin: 25px 0;
+}
+
+.contact-us p {
+  display: inline-block;
+  width: 30%;
+  min-width: 170px;
+  padding: 25px 0;
+  color: #6b6b6b;
+}
+
 /* MAIL  */
 .mail-container {
   display: -webkit-box;
@@ -313,43 +346,6 @@ header {
   font-size: 5rem;
   font-weight: bold;
   color: white;
-}
-
-.contact-us input {
-  width: 100%;
-  padding: 0 2rem;
-  padding-top: 10px;
-  font-size: 1.5rem;
-  font-style: italic;
-  height: 90px;
-  margin-left: 15px;
-  background-color: #ededed;
-  border: none;
-  -webkit-box-shadow: 0px 8px 0px 0px #ededed;
-          box-shadow: 0px 8px 0px 0px #ededed;
-}
-
-.contact-us a {
-  /* width: 98%; */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-decoration: none;
-  margin: 25px 0;
-}
-
-.contact-us p {
-  display: inline-block;
-  width: 30%;
-  min-width: 170px;
-  padding: 25px 0;
-  color: #6b6b6b;
 }
 
 .p-find-us {
