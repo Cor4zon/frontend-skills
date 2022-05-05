@@ -707,12 +707,12 @@ footer {
   color: #8d8d8d;
 }
 
-.black-bar-info {
-  display: none;
-}
-
 .black-bar p {
   text-align: right;
   line-height: 2rem;
+}
+
+.black-bar-info {
+  display: none;
 }
 /*# sourceMappingURL=iphone_style.css.map */

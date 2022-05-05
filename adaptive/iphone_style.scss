@@ -416,18 +416,18 @@ header {
   width: 150px;
   background-color: #3d3d3d;
   border-radius: 50%;
-
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-size: 2.5rem;
+  
+  i {
+    color: white;
+  }
 }
 
-.circle i {
-  color: white;
-}
 
 .p-shop-it {
   display: flex;
@@ -588,24 +588,25 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   font-size: 24px;
   padding: 0 20px;
   height: 10vh;
   background-color: black;
   color: white;
+  
+  a {
+    text-decoration: none;
+    color: #8d8d8d;
+  }
+  
+  p {
+    text-align: right;
+    line-height: 2rem;
+  }
 }
 
-.black-bar a {
-  text-decoration: none;
-  color: #8d8d8d;
-}
 
 .black-bar-info {
   display: none;
 }
 
-.black-bar p {
-  text-align: right;
-  line-height: 2rem;
-}
