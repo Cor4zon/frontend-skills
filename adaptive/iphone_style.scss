@@ -318,16 +318,18 @@ header {
   height: 90px;
   background: #f7f7f7;
   vertical-align: middle;
+  
+  i {
+      font-size: 2rem;
+      color: #6b6b6b;
+  }
+
+  &:nth-child(2) {
+    background-color: #ededed;
+  }
 }
 
-.social-network:nth-child(2) {
-  background-color: #ededed;
-}
 
-.social-network i {
-  font-size: 2rem;
-  color: #6b6b6b;
-}
 
 .shop-now-btn {
   display: none;
@@ -341,15 +343,16 @@ header {
 .category-form {
   width: 100vw;
   height: 8vh;
+  
+  i {
+    position: absolute;
+    right: 25px;
+    margin-top: 20px;
+    color: white;
+    font-size: 2rem;
+  }
 }
 
-.category-form i {
-  position: absolute;
-  right: 25px;
-  margin-top: 20px;
-  color: white;
-  font-size: 2rem;
-}
 
 #category-select {
   width: 100%;
@@ -384,16 +387,17 @@ header {
 .product-item {
   display: none;
   min-width: 245px;
+  
+  &:nth-child(1),
+  &:nth-child(2) {
+    display: inline-block;
+    width: 280px;
+    height: 500px;
+    background-color: #f7f7f7;
+    margin: 10px;
+  }
 }
 
-.product-item:nth-child(1),
-.product-item:nth-child(2) {
-  display: inline-block;
-  width: 280px;
-  height: 500px;
-  background-color: #f7f7f7;
-  margin: 10px;
-}
 
 .product-image {
   width: 100%;
@@ -412,14 +416,8 @@ header {
   width: 150px;
   background-color: #3d3d3d;
   border-radius: 50%;
-  /* display: inline-block; */
 
-  /* background-image: url('images/shop.svg');
-    background-size: 30%; */
   color: white;
-  /* background-position: center;
-    background-repeat: no-repeat; */
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -448,19 +446,8 @@ header {
 
   color: white;
 
-  /* background-image: url("images/dollar.svg"); */
-  /* background-repeat: no-repeat; */
-  /* background-position: contain; */
-
   cursor: pointer;
 }
-
-/* .product-image:hover,
-  .product-image:active {
-      background-image: url('images/dollar.svg');
-      background-size: center;
-      cursor: pointer;
-  } */
 
 .mimosa {
   background-image: url("images/items/dress1.png");

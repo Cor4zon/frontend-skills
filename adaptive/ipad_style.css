@@ -11,9 +11,7 @@
     align-items: center;
     flex-wrap: nowrap;
     height: 30px;
-
     font-size: 11px;
-    /* padding: 3px; */
   }
 
   .customer-care {
@@ -87,10 +85,6 @@
     padding-right: 0;
   }
 
-  /* .shop-info a {
-        padding-top: 15px;
-    } */
-
   .menu-container {
     display: flex;
     align-items: center;
@@ -143,8 +137,6 @@
     width: 100%;
     border: none;
     border-top: 1px solid #d6d6d6;
-
-    /* important for big-cart  */
     margin-left: 0;
 
     padding: 0;
@@ -191,7 +183,7 @@
   .background-image li {
     display: none;
   }
-  
+
   .background-image li img {
     width: 100%;
     height: 300px;
@@ -199,7 +191,6 @@
     background-position: center;
     background-size: contain;
   }
-
 
   .left-scroll {
     position: absolute;
@@ -223,7 +214,6 @@
     opacity: 0.902;
   }
 
-  
   .left-scroll:hover,
   .right-scroll:hover,
   .left-scroll:active,
@@ -234,7 +224,7 @@
   .crazy_summer-box {
     position: absolute;
     top: -15%;
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -374,7 +364,6 @@
   .contact-us input {
     width: auto;
     height: 30px;
-    /* margin-left: -8rem; */
     background-color: white;
     font-size: 12px;
     padding: 0px 1rem;
@@ -408,7 +397,6 @@
   }
 
   .social-networks {
-    /* width: 30%; */
     min-width: 150px;
     max-width: 210px;
     list-style-type: none;
@@ -508,7 +496,6 @@
   }
 
   /* CATEGORIES  */
-
   .category-form {
     display: none;
   }
@@ -635,13 +622,6 @@
   .sale-icon {
     width: 30%;
   }
-  /* .sales-products-item:nth-child(3) {
-    display: inline-block;
-    width: 280px;
-    height: 500px;
-    background-color: white;
-    margin: 10px;
-  } */
 
   .sofi-dress {
     background-image: url("images/items/dress2.png");
@@ -652,8 +632,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    /* border-top: 1px solid #d8d8d8; */
     border-bottom: 1px solid #d8d8d8;
   }
 
@@ -692,7 +670,6 @@
     background-repeat: no-repeat;
     background-position: center;
     background-position: contain;
-    /* background: no-repeat center contain; */
   }
 
   .brand-item a {
@@ -800,7 +777,6 @@
   }
 
   /* social networks grid  */
-
   .social-container {
     display: flex;
     flex-direction: column;
@@ -860,7 +836,6 @@
     justify-content: center;
     align-items: center;
     width: 16%;
-
     background-image: url("images/secure-badge.png");
     background-repeat: no-repeat;
   }
@@ -885,7 +860,6 @@
   .campaigns {
     grid-column-start: 1;
     grid-column-end: 2;
-
     grid-row-start: 2;
     grid-row-end: 3;
   }
@@ -893,7 +867,6 @@
   .stores {
     grid-column-start: 2;
     grid-column-end: 3;
-
     grid-row-start: 2;
     grid-row-end: 3;
   }
@@ -906,10 +879,8 @@
   .social-container {
     grid-column-start: 3;
     grid-column-end: 4;
-
     grid-row-start: 1;
     grid-row-end: 2;
-
     margin-left: -85px;
   }
 
@@ -970,7 +941,6 @@
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-
     padding: 0 15px;
   }
 
@@ -1005,7 +975,7 @@
     left: -15%;
   }
 
-  .offer-4 button {
+  button {
     background-color: rgb(79, 175, 160);
     position: relative;
     left: 10%;

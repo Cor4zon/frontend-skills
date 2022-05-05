@@ -391,13 +391,13 @@ header {
   vertical-align: middle;
 }
 
-.social-network:nth-child(2) {
-  background-color: #ededed;
-}
-
 .social-network i {
   font-size: 2rem;
   color: #6b6b6b;
+}
+
+.social-network:nth-child(2) {
+  background-color: #ededed;
 }
 
 .shop-now-btn {
@@ -459,8 +459,7 @@ header {
   min-width: 245px;
 }
 
-.product-item:nth-child(1),
-.product-item:nth-child(2) {
+.product-item:nth-child(1), .product-item:nth-child(2) {
   display: inline-block;
   width: 280px;
   height: 500px;
@@ -485,12 +484,7 @@ header {
   width: 150px;
   background-color: #3d3d3d;
   border-radius: 50%;
-  /* display: inline-block; */
-  /* background-image: url('images/shop.svg');
-    background-size: 30%; */
   color: white;
-  /* background-position: center;
-    background-repeat: no-repeat; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -538,18 +532,9 @@ header {
   height: 100%;
   width: 100%;
   color: white;
-  /* background-image: url("images/dollar.svg"); */
-  /* background-repeat: no-repeat; */
-  /* background-position: contain; */
   cursor: pointer;
 }
 
-/* .product-image:hover,
-  .product-image:active {
-      background-image: url('images/dollar.svg');
-      background-size: center;
-      cursor: pointer;
-  } */
 .mimosa {
   background-image: url("images/items/dress1.png");
 }
