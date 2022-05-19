@@ -1,6 +1,9 @@
-# bellerage-internship
+
+# Адаптивная верстка 
+
+https://quiet-hollows-12677.herokuapp.com/
 
 
-[белая полоса справа](https://qna.habr.com/q/218863)
+# Фиксированая верстка 
 
-[БЭМ](https://ru.bem.info/methodology/)
+https://evening-stream-47345.herokuapp.com/
