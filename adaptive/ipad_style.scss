@@ -154,21 +154,9 @@
   }
 
   .menu {
-    height: 50px;
-    padding: 0 15px;
-    padding-right: 30px;
-
-    button {
-      font-size: 1.5rem;
-      padding: 0 2%;
-      width: 100%;
-      margin-left: 0;
-    }
+    display: none;
   }
 
-  .menu-btn p {
-    font-size: 18px;
-  }
 
   .background {
     display: block;
@@ -219,15 +207,15 @@
   }
 
   .crazy_summer-box {
-    position: absolute;
-    top: -15%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 40%;
-    height: 100%;
-    margin-left: 2.5rem;
+    display: none;
+    //position: absolute;
+    //top: 20%;
+    //display: flex;
+    //align-items: center;
+    //flex-direction: column;
+    //width: 40%;
+    //height: 100%;
+    //margin-left: 2.5rem;
   }
 
   .crazy-container {
@@ -467,6 +455,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    button {
+      position: relative;
+    }
   }
 
   .p-fall {
@@ -964,7 +956,7 @@
 
   button {
     background-color: rgb(79, 175, 160);
-    position: relative;
+    //position: relative;
     left: 10%;
     top: 38%;
     width: 98px;
