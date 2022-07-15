@@ -1,12 +1,22 @@
 
 let user = {
     name: "John",
+    0: 1,
+    1: 9,
+    2: 3223,
+    3: 32,
+    length: 2,
 }
 
+
+
 Object.defineProperty(user, "name", {
-    writable: false,
-});
+    enumerable: false
+})
 
-user.name = "Bob";
+for (let key in user) {
+    console.log(key)
+}
 
-console.log(user);
+console.log(Object.keys(user));
+
