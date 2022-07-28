@@ -1,8 +1,11 @@
-import React, { useState, useEffect, useReducer } from 'react';
+import React, { useState, useEffect, useReducer, useContext } from 'react';
 
 import Card from '../UI/Card/Card';
+import Input from "../UI/Input/Input";
 import classes from './Login.module.css';
 import Button from '../UI/Button/Button';
+import AuthContext from "../../store/auth-context";
+import authContext from "../../store/auth-context";
 
 const emailReducer = (state, action) => {
   if (action.type === 'USER_INPUT') {
@@ -28,7 +31,7 @@ const passwordReducer = (state, action) => {
   if (action.type === 'INPUT_BLUR') {
     return {
       value: state,
-      isValid: state.trim().length > 6
+      isValid: state.value.trim().length > 6
     }
   }
 
@@ -37,6 +40,7 @@ const passwordReducer = (state, action) => {
 
 const Login = (props) => {
   const [formIsValid, setFormIsValid] = useState(false);
+  const context = useContext(AuthContext);
 
   const [ emailState, dispatchEmail ] = useReducer(emailReducer, {
       value: '',
@@ -48,30 +52,24 @@ const Login = (props) => {
     isValid: false
   });
 
+  const { isValid: passwordIsValid } = passwordState;
+  const { isValid: emailIsValid } = emailState;
+
   useEffect(() => {
-    console.log('EFFECT RUNNING');
+    const identifier = setTimeout(() => {
+      console.log('Checking form validity!');
+      setFormIsValid(
+        emailState.isValid && passwordState.isValid
+      );
+    }, 500);
 
     return () => {
-      console.log('EFFECT CLEANUP');
+      console.log('CLEANUP');
+      clearTimeout(identifier);
     };
-  }, []);
-
-  // useEffect(() => {
-  //   const identifier = setTimeout(() => {
-  //     console.log('Checking form validity!');
-  //     setFormIsValid(
-  //       enteredEmail.includes('@') && enteredPassword.trim().length > 6
-  //     );
-  //   }, 500);
-
-  //   return () => {
-  //     console.log('CLEANUP');
-  //     clearTimeout(identifier);
-  //   };
-  // }, [enteredEmail, enteredPassword]);
+  }, [emailIsValid, passwordIsValid]);
 
   const emailChangeHandler = (event) => {
-    // setEnteredEmail(event.target.value);
     dispatchEmail({
       type: 'USER_INPUT', payload: event.target.value
     });
@@ -106,42 +104,42 @@ const Login = (props) => {
 
   const submitHandler = (event) => {
     event.preventDefault();
-    props.onLogin(emailState.value, passwordState.value);
+    if (formIsValid) {
+      authContext.onLogin(emailState.value, passwordState.value);
+    } else if (!emailIsValid) {
+
+    } else {
+
+    }
+    context.onLogin(emailState.value, passwordState.value);
   };
 
   return (
     <Card className={classes.login}>
       <form onSubmit={submitHandler}>
-        <div
-          className={`${classes.control} ${
-            emailState.isValid === false ? classes.invalid : ''
-          }`}
-        >
-          <label htmlFor="email">E-Mail</label>
-          <input
-            type="email"
-            id="email"
-            value={emailState.value}
-            onChange={emailChangeHandler}
-            onBlur={validateEmailHandler}
+
+          <Input
+              id="email"
+              label="email"
+              type="email"
+              isValid={emailIsValid}
+              value={emailState.value}
+              onChange={emailChangeHandler}
+              onBlur={validateEmailHandler}
           />
-        </div>
-        <div
-          className={`${classes.control} ${
-            passwordState.isValid === false ? classes.invalid : ''
-          }`}
-        >
-          <label htmlFor="password">Password</label>
-          <input
-            type="password"
+
+        <Input
             id="password"
+            label="password"
+            type="password"
+            isValid={passwordIsValid}
             value={passwordState.value}
             onChange={passwordChangeHandler}
             onBlur={validatePasswordHandler}
-          />
-        </div>
+        />
+
         <div className={classes.actions}>
-          <Button type="submit" className={classes.btn} disabled={!formIsValid}>
+          <Button type="submit" className={classes.btn} >
             Login
           </Button>
         </div>
