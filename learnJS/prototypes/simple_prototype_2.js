@@ -20,3 +20,6 @@ const abyssin = {
     color: 'orange',
     __proto__: cat,
 };
+
+
+console.log(Object.getPrototypeOf(animal));
