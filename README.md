@@ -32,3 +32,5 @@ Inspiration
 |http://www.bchanx.com/logos-in-pure-css| FAANG Logos|
 |https://codepen.io/katydecorah/pen/nYLbEN|3d navigation|
 
+
+Blogs
