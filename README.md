@@ -1,3 +1,7 @@
+# Learning advanced javascript
+
+https://johnresig.com/apps/learn/
+
 
 # Adaptive layout
 
