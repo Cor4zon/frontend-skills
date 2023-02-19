@@ -2,6 +2,8 @@
 
 https://johnresig.com/apps/learn/
 
+https://github.com/sorrycc/awesome-javascript#worth-reading
+
 
 # Adaptive layout
 
