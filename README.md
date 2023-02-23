@@ -4,6 +4,13 @@ https://johnresig.com/apps/learn/
 
 https://github.com/sorrycc/awesome-javascript#worth-reading
 
+https://www.techinterviewhandbook.org/
+
+https://github.com/donnemartin/system-design-primer
+
+https://www.codingninjas.com/codestudio/guided-paths/operating-system-track?utm_source=git&utm_medium=affiliate&utm_campaign=Aakshgit
+
+https://www.codingninjas.com/codestudio/problems?category%5B%5D=Programming%20Fundamentals&page=1
 
 # Adaptive layout
 
