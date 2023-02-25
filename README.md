@@ -34,6 +34,8 @@ https://evening-stream-47345.herokuapp.com/
 |https://cssgradient.io/| Gradient |
 |http://www.cssdrive.com/imagepalette/|Image palette|
 |https://paletton.com/#uid=1000u0kllllaFw0g0qFqFg0w0aF|Palleton|
+|https://www.fontconverter.io/en| Font converter|
+|https://transfonter.org/|Font converter|
 
 
 
