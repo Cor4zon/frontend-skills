@@ -1,5 +1,7 @@
 # Learning advanced javascript
 
+[inspiration💜](https://www.freecodecamp.org/news/15-web-developer-portfolios-to-inspire-you-137fb1743cae/)
+
 https://johnresig.com/apps/learn/
 
 https://github.com/sorrycc/awesome-javascript#worth-reading
