@@ -1,5 +1,39 @@
 # Learning advanced javascript
 
+plan
+
+**DI-container**
+
+[Dependency injection](https://www.freecodecamp.org/news/a-quick-intro-to-dependency-injection-what-it-is-and-when-to-use-it-7578c84fa88f/)
+
+
+
+**Архитектура и хорошие практики**
+
+[Архитектура и паттерны проектирования](https://doka.guide/tools/architecture-and-design-patterns/)
+
+[Организация потоков данных](https://doka.guide/tools/architecture-data-flow/)
+
+[Микросервисы](https://doka.guide/tools/microservices/)
+
+[Паттерны Gateway и Backend-for-Frontend](https://doka.guide/tools/gateway-bff/)
+
+[Трёхслойная архитектура](https://doka.guide/tools/clean-architecture/)
+
+[Архитектурный паттерн MVC](https://doka.guide/tools/architecture-mvc/)
+
+
+**Реактивность**
+
+[Реактивность в программировании](https://doka.guide/tools/reactivity/)
+
+**Proxy and Reflect**
+
+[Proxy и Reflect](https://learn.javascript.ru/proxy)
+
+
+
+
 [inspiration💜](https://www.freecodecamp.org/news/15-web-developer-portfolios-to-inspire-you-137fb1743cae/)
 
 https://johnresig.com/apps/learn/
