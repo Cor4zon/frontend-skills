@@ -6,7 +6,7 @@ plan
 
 [Dependency injection](https://www.freecodecamp.org/news/a-quick-intro-to-dependency-injection-what-it-is-and-when-to-use-it-7578c84fa88f/)
 
-
+[Clean Architecture](https://medium.com/codex/clean-architecture-for-dummies-df6561d42c94)
 
 **Архитектура и хорошие практики**
 
