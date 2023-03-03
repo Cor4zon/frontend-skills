@@ -54,6 +54,13 @@ https://www.codingninjas.com/codestudio/guided-paths/operating-system-track?utm_
 
 https://www.codingninjas.com/codestudio/problems?category%5B%5D=Programming%20Fundamentals&page=1
 
+https://ru.hexlet.io/courses/js-polymorphism
+
+https://ru.hexlet.io/programs/js-sicp
+
+
+
+
 # Adaptive layout
 
 https://quiet-hollows-12677.herokuapp.com/
